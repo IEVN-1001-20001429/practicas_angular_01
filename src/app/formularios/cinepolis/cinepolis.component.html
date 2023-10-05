@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 tituloDiv">
+                <h1 class="text-center tituloP tituloDivs">Cinepolis</h1>
+            </div>
+            <div class="col-6">
+                <h3 class="tituloDivs">Entradas</h3>
+                <div class="Div">
+                    <div class="labelsEntradas col-6">
+                        <label class="labelEntrada">Nombre:</label>
+                        <label class="labelEntrada">Cantidad compradores:</label>
+                        <label class="labelEntrada">Tarjeta Cineco:</label>
+                        <label class="labelEntrada">Cantidad de boletos:</label>
+                    </div>
+                    <div class="inputsEntradas col-6">
+                        <input [(ngModel)]="nombre" type="text" class="form-control inputEntrada">
+                        <input [(ngModel)]="cantidadComp" type="number" class="form-control inputEntrada">
+                        <fieldset>
+                            <label>Si <input [(ngModel)]="ifTarjeta" type="radio" value="1"></label>
+                            <label>No <input [(ngModel)]="ifTarjeta" type="radio" value="0"></label>
+                        </fieldset>
+                        <input [(ngModel)]="numBoletos" type="number" class="form-control inputEntrada">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <h3 class="tituloDivs">Salidas</h3>
+                <div class="Div">
+                    <div class="labelsEntradas col-6">
+                        <label class="labelEntrada">Valor a pagar:</label>
+                    </div>
+                    <div class="inputsEntradas col-6">
+                        <input [(ngModel)]="valorPagar" type="text" class="form-control inputEntrada">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 divInferior">
+                <div class="col-6">
+                    <h3 class="tituloDivs">Acciones</h3>
+                    <div class="Div">
+                        <div class="btnAcciones">
+                            <button (click)="procesarCompra()" class="btn btn-light btns">Procesar</button>
+                            <button (click)="recargar()" class="btn btn-light btns">Salir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
