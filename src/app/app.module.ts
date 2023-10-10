@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MultiplicacionaxbComponent } from './formularios/multiplicacionaxb/multiplicacionaxb.component';
 import { MaterialModule } from './material/material/material.module';
 import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+import { MenuComponent } from './menu/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OperasBasComponent,
     MultiplicacionaxbComponent,
-    CinepolisComponent
+    CinepolisComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
